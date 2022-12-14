@@ -44,7 +44,7 @@ namespace Day1
 
         private static int Challenge2()
         {
-            string[] lines = File.ReadAllLines(@"C:\Users\Luca Goeske\source\repos\AdventOfCode\Day1\Input.txt");
+            string[] lines = File.ReadAllLines(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "input.txt"));
 
             List<int> listOfGoods = new List<int>();
 

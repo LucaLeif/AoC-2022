@@ -9,22 +9,9 @@ namespace Day2
 {
     class Program
     {
-        public enum OptionsUser
-        {
-            X = 1, //Stein
-            Y = 2, //Papier
-            Z = 3  //Schere
-        }
-        public enum OptionsEnemy
-        {
-            A = 1,
-            B = 2,
-            C = 3
-        }
-
         static void Main(string[] args)
         {
-            string[] matches = File.ReadAllLines(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "mock.txt"));
+            string[] matches = File.ReadAllLines(Path.Combine(Directory.GetParent(Directory.GetCurrentDirectory()).Parent.FullName, "input.txt"));
 
             int result = Challenge2(matches);
             Console.WriteLine(result);
